@@ -2,6 +2,14 @@
 window.onload = function(){
 
     displayEntireMonth()
+    const randomNum = function (newRandom) {
+        let changeNum = document.getElementsByTagName("h1")[0];
+        changeNum.innerText =newRandom;
+      };
+      const btn1= document.querySelector("#random-num")
+      btn1.addEventListener('click', function(){
+        randomNum (Math.round(Math.random() * 76));
+           })
 }
     
 
